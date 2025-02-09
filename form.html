@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    
+</head>
+<body>
+    <header>
+        <img src="C:\Users\USER\Documents\Alt_School\Class_1\HTML ASS\altschool.png" alt="Alt_School Logo">
+        <p>Already an Alt_Schooler? <a href="https://portal.altschoolafrica.com/auth/login">Sign In!</a></p>
+        <br>
+    </header>
+
+    <main>
+        <h2>Signup</h2>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <form action="https://portal.altschoolafrica.com/auth/signup" method="POST">
+            <!--personal info-->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+            <br><br>
+            <!--address info-->
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" aria-placeholder="Select gender">
+                <option value="gender">Select gender</option>
+                <!-- gender options -->
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <!--contact info-->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="08126637637">
+            <br><br>
+            <!--regions-->
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="country">Select country</option>
+                 <!-- country options -->
+                <option value="NG">Nigeria</option>
+                <option value="GH">Ghana</option>
+                <option value="KY">Kenya</option>
+                <option value="CM">Cameroon</option>
+            </select>
+            <label for="State/City">State/City of Residence</label>
+            <input type="text" id="state" name="state" placeholder="Enter state of residence">
+            <br><br>
+
+            <label for="howyouheardaboutus">How did you hear about us?</label>
+            <br><br>
+            <select name="how" id="how">
+                 <!-- how options -->
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="email">Email</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password again">
+            <br><br>
+            <!--submit button-->
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <p>By clicking submit, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+        <br>
+    </main>
+    
+    <footer>
+        <p><Address>6, Ewupe road, Singer Bus-stop, Sango ota, Ogun State.</Address></p>
+        <p>&copy;James Kehinde, 2024. </p>
+    </footer>
+       
+    </form>
+</body>
+</html>
